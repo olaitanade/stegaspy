@@ -1,0 +1,52 @@
+﻿<Controls:MetroWindow x:Class="StegaSpy.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        ResizeMode="CanResizeWithGrip"
+        WindowTransitionsEnabled="True"
+        BorderThickness="1"
+        Title="Stego Spy - Help" Height="300" Width="600">
+
+    <ScrollViewer>
+        
+        <StackPanel Margin="10" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <TextBlock HorizontalAlignment="Center" FontSize="17" FontWeight="Medium" Margin="5">How To Use The Software</TextBlock>
+            <TabControl>
+                <TabItem Header="Encode">
+                    <StackPanel>
+                        <Expander Margin="5" Padding="5" Header="Step 1:  Browse text File" IsExpanded="True">
+                            <TextBlock FontSize="13" Padding="5">1. Import the <Bold>text file</Bold> that contains the <Bold>Secret Message</Bold>
+                            </TextBlock>
+
+                        </Expander>
+                        <Expander Margin="5" Padding="5" Header="Step 2: browse avi file">
+                            <TextBlock FontSize="13" Padding="5">1. Import the <Bold>avi file</Bold> that would be used as the <Bold>container</Bold></TextBlock>
+                        </Expander>
+                        <Expander Margin="5" Padding="5" Header="Step 3: Click on Encode">
+                            <TextBlock FontSize="13" Padding="5">1. If successful the <Bold>password is generated</Bold>.<LineBreak></LineBreak>---Thanks</TextBlock>
+                        </Expander>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Header="Decode">
+                    <StackPanel>
+                        <Expander Margin="5" Padding="5" Header="Step 1:  Browse avi File" IsExpanded="True">
+                            <TextBlock FontSize="13" Padding="5">1. Import the <Bold>avi file</Bold> that contains the <Bold>Secret Message</Bold>
+                            </TextBlock>
+
+                        </Expander>
+                        <Expander Margin="5" Padding="5" Header="Step 2: browse avi file">
+                            <TextBlock FontSize="13" Padding="5">1. Enter the <Bold>password</Bold> that would be used to get the <Bold>Secret Message</Bold></TextBlock>
+                        </Expander>
+                        <Expander Margin="5" Padding="5" Header="Step 3: Click on Decode">
+                            <TextBlock FontSize="13" Padding="5">1. If successful the <Bold>Message is generated</Bold>.<LineBreak></LineBreak>---Thanks</TextBlock>
+                        </Expander>
+                    </StackPanel>
+                </TabItem>
+            </TabControl>
+            
+
+        </StackPanel>
+    </ScrollViewer>
+</Controls:MetroWindow>
